@@ -1,0 +1,174 @@
+1)
+\import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+
+        String result = (n % 7 == 0) ? "Lucky" : "Unlucky";
+
+        System.out.println(result);
+    }
+}
+2)
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+
+        String result = (a == b) ? "Same"
+                       : (a < b) ? String.valueOf(a)
+                       : String.valueOf(b);
+
+        System.out.println(result);
+    }
+}
+3)
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        char ch = sc.next().charAt(0);
+
+        String result =
+            (ch == 'a' || ch == 'e' || ch == 'i' ||
+             ch == 'o' || ch == 'u' ||
+             ch == 'A' || ch == 'E' || ch == 'I' ||
+             ch == 'O' || ch == 'U')
+            ? "Vowel" : "Consonant";
+
+        System.out.println(result);
+    }
+}
+4)
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int temp = sc.nextInt();
+
+        String result = (temp > 35) ? "Hot"
+                      : (temp >= 20) ? "Normal"
+                      : "Cold";
+
+        System.out.println(result);
+    }
+}
+5)
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int amount = sc.nextInt();
+
+        String result = (amount % 10 == 0)
+                      ? "Valid Amount"
+                      : "Invalid Amount";
+
+        System.out.println(result);
+    }
+}
+6)
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+
+        int firstDigit = n / 10;
+        int secondDigit = n % 10;
+
+        String result = (firstDigit == secondDigit)
+                      ? "Equal Digits"
+                      : "Different Digits";
+
+        System.out.println(result);
+    }
+}
+7)
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+
+        String result = (n >= 50 && n <= 100)
+                      ? "Inside Range"
+                      : "Outside Range";
+
+        System.out.println(result);
+    }
+}
+8)
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int salary = sc.nextInt();
+        int experience = sc.nextInt();
+
+        int bonus = (experience >= 5 && salary < 50000)
+                  ? 5000 : 0;
+
+        System.out.println(bonus);
+    }
+}
+9)
+mport java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+
+        String result =
+            (a > 0 && b > 0 && c > 0 &&
+             a + b > c && a + c > b && b + c > a)
+            ? "Valid Triangle"
+            : "Invalid Triangle";
+
+        System.out.println(result);
+    }
+}
+10)
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+
+        String result = (n == 0) ? "Zero"
+                      : (n > 0)
+                        ? (n % 2 == 0)
+                          ? "Positive Even"
+                          : "Positive Odd"
+                        : (n % 2 == 0)
+                          ? "Negative Even"
+                          : "Negative Odd";
+
+        System.out.println(result);
+    }
+}
