@@ -1,0 +1,518 @@
+1)
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int balance = sc.nextInt();
+
+        if (balance < 1000) {
+            System.out.println("Low Balance Alert");
+        }
+    }
+}
+2)
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int score = sc.nextInt();
+
+        if (score % 2 != 0) {
+            System.out.println("Bonus Unlocked");
+        }
+    }
+}
+3)
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int temperature = sc.nextInt();
+
+        if (temperature >= 30) {
+            System.out.println("Warm Day");
+        } else {
+            System.out.println("Cool Day");
+        }
+    }
+}
+4)
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int number = sc.nextInt();
+
+        if (Math.abs(number % 10) == 7) {
+            System.out.println("Lucky Ending");
+        } else {
+            System.out.println("Not a Lucky Ending");
+        }
+    }
+}
+5)
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int amount = sc.nextInt();
+
+        if (amount >= 500) {
+            System.out.println("Reusable Bag Available");
+        } else {
+            System.out.println("No Free Bag");
+        }
+    }
+}
+6)
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int mark = sc.nextInt();
+
+        if (mark < 0 || mark > 100) {
+            System.out.println("Invalid Mark");
+        } else if (mark >= 90) {
+            System.out.println("Grade A");
+        } else if (mark >= 75) {
+            System.out.println("Grade B");
+        } else if (mark >= 60) {
+            System.out.println("Grade C");
+        } else if (mark >= 35) {
+            System.out.println("Grade D");
+        } else {
+            System.out.println("Fail");
+        }
+    }
+}
+7)
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int units = sc.nextInt();
+
+        if (units < 0) {
+            System.out.println("Invalid Units");
+        } else if (units < 100) {
+            System.out.println("Low Consumption");
+        } else if (units < 200) {
+            System.out.println("Medium Consumption");
+        } else if (units < 300) {
+            System.out.println("High Consumption");
+        } else {
+            System.out.println("Very High Consumption");
+        }
+    }
+}
+8)
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int years = sc.nextInt();
+
+        if (years < 0) {
+            System.out.println("Invalid Experience");
+        } else if (years == 0) {
+            System.out.println("Fresher");
+        } else if (years <= 2) {
+            System.out.println("Junior");
+        } else if (years <= 5) {
+            System.out.println("Intermediate");
+        } else {
+            System.out.println("Senior");
+        }
+    }
+}
+9)
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int amount = sc.nextInt();
+
+        if (amount < 0) {
+            System.out.println("Invalid Order");
+        } else if (amount >= 2000) {
+            System.out.println("Delivery Charge: Rs. 0");
+        } else if (amount >= 1000) {
+            System.out.println("Delivery Charge: Rs. 30");
+        } else {
+            System.out.println("Delivery Charge: Rs. 60");
+        }
+    }
+}
+10)
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int hour = sc.nextInt();
+
+        if (hour < 0 || hour > 23) {
+            System.out.println("Invalid Hour");
+        } else if (hour >= 5 && hour <= 11) {
+            System.out.println("Good Morning");
+        } else if (hour >= 12 && hour <= 16) {
+            System.out.println("Good Afternoon");
+        } else if (hour >= 17 && hour <= 20) {
+            System.out.println("Good Evening");
+        } else {
+            System.out.println("Good Night");
+        }
+    }
+}
+11)
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        boolean usernameCorrect = sc.nextBoolean();
+        boolean passwordCorrect = sc.nextBoolean();
+
+        if (usernameCorrect) {
+            if (passwordCorrect) {
+                System.out.println("Login Successful");
+            } else {
+                System.out.println("Incorrect Password");
+            }
+        } else {
+            System.out.println("Invalid Username");
+        }
+    }
+}
+12)
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int mark = sc.nextInt();
+        int attendance = sc.nextInt();
+
+        if (mark >= 80) {
+            if (attendance >= 90) {
+                System.out.println("Scholarship Approved");
+            } else {
+                System.out.println("Attendance Too Low");
+            }
+        } else {
+            System.out.println("Not Eligible by Mark");
+        }
+    }
+}
+13)
+mport java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int balance = sc.nextInt();
+        int amount = sc.nextInt();
+
+        if (amount > 0) {
+            if (amount <= balance) {
+                System.out.println("Withdrawal Successful");
+            } else {
+                System.out.println("Insufficient Balance");
+            }
+        } else {
+            System.out.println("Invalid Amount");
+        }
+    }
+}
+14)
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        boolean registered = sc.nextBoolean();
+        boolean hallTicketAvailable = sc.nextBoolean();
+
+        if (registered) {
+            if (hallTicketAvailable) {
+                System.out.println("Allowed to Attend");
+            } else {
+                System.out.println("Download Hall Ticket");
+            }
+        } else {
+            System.out.println("Registration Required");
+        }
+    }
+}
+15)
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+
+        if (a == b) {
+            System.out.println("Both Numbers are Equal");
+        } else if (a == 0 || b == 0) {
+            System.out.println("Cannot Perform Divisibility Check");
+        } else if (a > b) {
+            if (a % b == 0) {
+                System.out.println(
+                    "Greater Number is a Multiple of Smaller Number"
+                );
+            } else {
+                System.out.println(
+                    "Greater Number is Not a Multiple"
+                );
+            }
+        } else {
+            if (b % a == 0) {
+                System.out.println(
+                    "Greater Number is a Multiple of Smaller Number"
+                );
+            } else {
+                System.out.println(
+                    "Greater Number is Not a Multiple"
+                );
+            }
+        }
+    }
+}
+16)
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double a = sc.nextDouble();
+        double b = sc.nextDouble();
+        char operator = sc.next().charAt(0);
+
+        switch (operator) {
+            case '+':
+                System.out.println("Result: " + (a + b));
+                break;
+
+            case '-':
+                System.out.println("Result: " + (a - b));
+                break;
+
+            case '*':
+                System.out.println("Result: " + (a * b));
+                break;
+
+            case '/':
+                if (b == 0) {
+                    System.out.println("Cannot Divide by Zero");
+                } else {
+                    System.out.println("Result: " + (a / b));
+                }
+                break;
+
+            default:
+                System.out.println("Invalid Operator");
+        }
+    }
+}
+17)
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int month = sc.nextInt();
+
+        switch (month) {
+            case 1:
+                System.out.println("January");
+                break;
+            case 2:
+                System.out.println("February");
+                break;
+            case 3:
+                System.out.println("March");
+                break;
+            case 4:
+                System.out.println("April");
+                break;
+            case 5:
+                System.out.println("May");
+                break;
+            case 6:
+                System.out.println("June");
+                break;
+            case 7:
+                System.out.println("July");
+                break;
+            case 8:
+                System.out.println("August");
+                break;
+            case 9:
+                System.out.println("September");
+                break;
+            case 10:
+                System.out.println("October");
+                break;
+            case 11:
+                System.out.println("November");
+                break;
+            case 12:
+                System.out.println("December");
+                break;
+            default:
+                System.out.println("Invalid Month");
+        }
+    }
+}
+18)
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int choice = sc.nextInt();
+        int quantity = sc.nextInt();
+
+        String food = "";
+        int price = 0;
+
+        if (quantity <= 0) {
+            System.out.println("Invalid Quantity");
+            return;
+        }
+
+        switch (choice) {
+            case 1:
+                food = "Burger";
+                price = 120;
+                break;
+
+            case 2:
+                food = "Pizza";
+                price = 250;
+                break;
+
+            case 3:
+                food = "Sandwich";
+                price = 100;
+                break;
+
+            case 4:
+                food = "Pasta";
+                price = 180;
+                break;
+
+            default:
+                System.out.println("Invalid Choice");
+                return;
+        }
+
+        int total = price * quantity;
+
+        System.out.println("Food: " + food);
+        System.out.println("Total: Rs. " + total);
+    }
+}
+19)
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String signal = sc.next().toUpperCase();
+
+        switch (signal) {
+            case "RED":
+                System.out.println("Stop");
+                break;
+
+            case "YELLOW":
+                System.out.println("Wait");
+                break;
+
+            case "GREEN":
+                System.out.println("Go");
+                break;
+
+            default:
+                System.out.println("Invalid Signal");
+        }
+    }
+}
+20)
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double balance = sc.nextDouble();
+        int choice = sc.nextInt();
+
+        switch (choice) {
+            case 1:
+                System.out.println(
+                    "Balance: Rs. " + balance
+                );
+                break;
+
+            case 2:
+                double deposit = sc.nextDouble();
+
+                if (deposit > 0) {
+                    balance += deposit;
+                    System.out.println("Deposit Successful");
+                    System.out.println(
+                        "Updated Balance: Rs. " + balance
+                    );
+                } else {
+                    System.out.println("Invalid Amount");
+                }
+                break;
+
+            case 3:
+                double withdrawal = sc.nextDouble();
+
+                if (withdrawal > 0) {
+                    if (withdrawal <= balance) {
+                        balance -= withdrawal;
+                        System.out.println("Withdrawal Successful");
+                        System.out.println(
+                            "Remaining Balance: Rs. " + balance
+                        );
+                    } else {
+                        System.out.println("Insufficient Balance");
+                    }
+                } else {
+                    System.out.println("Invalid Amount");
+                }
+                break;
+
+            case 4:
+                System.out.println("Exit");
+                break;
+
+            default:
+                System.out.println("Invalid Choice");
+        }
+    }
+}
