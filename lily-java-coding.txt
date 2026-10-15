@@ -1,0 +1,161 @@
+1)
+class Main {
+    public static void main(String[] args) {
+        for(int i = 1; i <= 10; i++) {
+            System.out.println(i);
+        }
+    }
+}
+2)
+class Main {
+    public static void main(String[] args) {
+       int number = 7;
+        for(int i= 1; i <= 10; i++) {
+            System.out.println(number + "x" + i +"=" + (number * i));
+        }
+    }
+}
+3)
+class Main {
+    public static void main(String[] args) {
+      int count = 5;
+        while(count >= 1) {
+            System.out.println("Countdown: " + count);
+            count--;
+        }
+        System.out.println("Start!");
+    }
+}
+4)
+class Main {
+    public static void main(String[] args) {
+      int number = 58372;
+        int count = 0;
+        while(number > 0) {
+            count++;
+            number = number / 10;
+        }
+        System.out.println("Count:" + count );
+    }
+}
+4)
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int sum = 0;
+
+        while (n > 0) {
+            int digit = n % 10;
+            sum = sum + digit;
+            n = n / 10;
+        }
+
+        System.out.println("Sum of Digits = " + sum);
+
+        sc.close();
+    }
+}
+5)
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int gcd = 1;
+        int limit = Math.min(a,b);
+        for (int i = 1; i <= limit; i++) {
+            if(a % i == 0 && b %  i == 0) {
+                gcd = i;
+            }
+        }
+        System.out.println("GCD =" + gcd);
+    }
+}
+6)
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int reverse = 0;
+
+        while (n > 0) {
+            int digit = n % 10;
+            reverse = reverse * 10 + digit;
+            n = n / 10;
+        }
+
+        System.out.println("Reverse = " + reverse);
+
+        sc.close();
+    }
+}
+7)
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int original = n;
+        int reverse = 0;
+
+        while (n > 0) {
+            int digit = n % 10;
+            reverse = reverse * 10 + digit;
+            n = n / 10;
+        }
+
+        System.out.println("Reverse = " + reverse);
+
+        if (original == reverse) {
+            System.out.println("Palindrome");
+        } else {
+            System.out.println("Not a Palindrome");
+        }
+
+        sc.close();
+    }
+}
+8)
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        long fact = 1;
+        for(int i = 1; i <= n; i++){
+            fact = fact * i;
+        }
+        System.out.println("Factorial = " + fact);
+    }
+}
+9)
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int fact = 1;
+
+        for (int i = 1; i <= n; i++) {
+            fact = fact * i;
+        }
+
+        System.out.println("Factorial = " + fact);
+
+        sc.close();
+    }
+}
+
